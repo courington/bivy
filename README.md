@@ -1,4 +1,4 @@
 bivy
 ====
 
-A basic fluid css framework with an emphasis on rapid, mobile-first construction.
+Bivy is an extremely small, lightweight, alternative to traditional fluid grid systems.
