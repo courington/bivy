@@ -1,3 +1,3 @@
 # bivy
 
-## minimalistic scss fluid grid framework
+minimalistic scss fluid grid framework
