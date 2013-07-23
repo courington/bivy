@@ -1,0 +1,13 @@
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+	background: $white;
+}
+
+body {
+	max-width: em($page-max-width, $base-font-size); // convert px to em
+	margin: 0 auto;
+	padding: 0;
+}

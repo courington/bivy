@@ -1,0 +1,90 @@
+// set page max width in px to convert to em
+$page-max-width: 1024px;
+
+// set grid column count
+$grid-count: 12;
+$grid-width: percentage( 1 / $grid-count );
+
+// pulls
+[class^="pull-"] {
+	display: inline-block;
+	&:before {
+		content: '';
+		clear: both;
+		display: block;
+	}
+}
+.pull-left {
+	float: left !important;
+}
+.pull-right {
+	float: right !important;
+}
+.clearfix {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.row {
+	width: $grid-width * 12;
+	@include rhythm(1,1,1,1);
+	display: block;
+	@extend .clearfix;
+}
+
+[class^="col"] {
+	width: $grid-width;
+	display: inline-block;
+	float: left;
+	@extend .clearfix;
+}
+
+.col1 {
+	width: $grid-width;
+}
+.col2 {
+	width: $grid-width * 2;
+}
+.col3 {
+	width: $grid-width * 3;
+}
+.col4 {
+	width: $grid-width * 4;
+}
+.col5 {
+	width: $grid-width * 5;
+}
+.col6 {
+	width: $grid-width * 6;
+}
+.col7 {
+	width: $grid-width * 7;
+}
+.col8 {
+	width: $grid-width * 8;
+}
+.col9 {
+	width: $grid-width * 9;
+}
+.col10 {
+	width: $grid-width * 10;
+}
+.col11 {
+	width: $grid-width * 11;
+}
+.col12 {
+	width: $grid-width * 12;
+}
+
+
+
+
+
+
+
+
+
+

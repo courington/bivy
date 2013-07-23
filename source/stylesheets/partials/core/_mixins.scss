@@ -1,0 +1,63 @@
+// buttons
+	// button color type
+	@mixin button-color-type($base-color, $text-color) {
+		color: $text-color;
+		background: $base-color;
+		border: 1px solid darken($base-color, 4);
+		&:hover,
+		&:focus {
+			color: darken($text-color, 8);
+			border-color: darken($base-color, 8);
+			background: darken($base-color, 4);
+		}
+		&:active {
+			color: darken($text-color, 16);
+			border-color: darken($base-color, 16);
+			background: darken($base-color, 8);
+		}
+		&.disable {
+			opacity: .5;
+			cursor: default;
+			&:hover,
+			&:focus,
+			&:active {
+				background: $base-color;
+				border-color: darken($base-color, 4);
+				color: $text-color;
+			}
+		}
+	}
+
+	// invert button color type
+	@mixin invert-button-color-type($base-color, $text-color) {
+		color: $text-color;
+		background: $base-color;
+		border: 1px solid darken($base-color, 4);
+		&:hover,
+		&:focus {
+			border-color: $base-color;
+			background: lighten($base-color, 4);
+		}
+		&:active {
+			background: lighten($base-color, 8);
+		}
+		&.disable {
+			opacity: .5;
+			cursor: default;
+			&:hover,
+			&:focus,
+			&:active {
+				background: $base-color;
+				border-color: darken($base-color, 4);
+				color: $text-color;
+			}
+		}
+	}
+
+// containers
+  // well
+  @mixin well($base-color, $text-color) {
+  	color: $text-color;
+		background: $base-color;
+		border: 1px solid darken($base-color, 4);
+  }
