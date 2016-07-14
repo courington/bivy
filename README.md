@@ -1,3 +1,3 @@
 # bivy
 
-minimalistic scss fluid grid framework
+basic styles to get you going
